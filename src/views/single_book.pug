@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  
+    h1=pugSingleBook.title
+    h3=pugSingleBook.author
+    h4=pugSingleBook.year
+        p=pugSingleBook.description
+        img(src=`../uploads/${pugSingleBook.img}`)
+    a.btn.btn-primary(href=`/book/edit/${pugSingleBook._id}`) Edit

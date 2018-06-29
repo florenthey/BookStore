@@ -1,0 +1,32 @@
+doctype html
+html
+    head
+        title BookStore
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+         link(rel="stylesheet" href="./css/style.css")
+    body
+        nav.navbar.navbar-expand-lg.navbar-light.bg-dark
+            .container
+                button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarSupportedContent.collapse.navbar-collapse
+                    ul.navbar-nav.mr-auto
+                        li.nav-item
+                            a.nav-link.text-light(href='/') Home
+                        li.nav-item
+                            a.nav-link.text-light(href='/book') Book
+                        li.nav-item
+                            a.nav-link.text-light(href='/book/add') Book Add
+                        li.nav-item
+                            a.nav-link.text-light(href='/admin/register') Register
+                        li.nav-item
+                            a.nav-link.text-light(href='/admin/login') Login
+                    
+                     
+        .container
+            br
+            block content
+            br  
+            hr
+
+            footer

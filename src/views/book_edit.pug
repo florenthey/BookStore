@@ -1,0 +1,39 @@
+extends layout
+
+block content
+    
+    h1 Editer un livre
+
+    form(method="POST", action=`/book/edit/${pugSingleBook._id}`)
+
+        #form-group
+
+            label Title
+
+            input.form-control(name="title", type="text", value="pugSingleBook.title")
+
+        #form-group
+
+            label Author
+
+            input.form-control(name="author", type="text", value="pugSingleBook.author")
+
+        #form-group
+
+            label Year
+
+            input.form-control(name="year", type="text", value="pugSingleBook.year")
+
+        #form-group
+
+            label Description
+
+            input.form-control(name="description", type="text", value="pugSingleBook.description")
+
+        br
+
+        input.btn.btn-primary(type="submit", value="Submit")
+
+
+
+          

@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 Liste des livres disponibles!
+  br
+  ul.list-group
+      each book, i in books
+          li.list-group-item
+              a(href=`/book/${book._id}`)=book.title

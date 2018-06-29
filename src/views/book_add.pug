@@ -1,0 +1,30 @@
+extends layout
+
+block content
+
+    h1 Ajouter un livre
+
+    form(method="POST", action="/book/add" enctype="multipart/form-data")
+
+        #form-group
+            label Title
+            input.form-control(name="title", type="text")
+
+        #form-group
+            label Author
+            input.form-control(name="author", type="text")
+
+        #form-group
+            label Year
+            textarea.form-control(name="year", type="date")
+
+        #form-group
+            label Description
+            textarea.form-control(name="description", type="text")
+
+        #form-group
+            label 
+            input.form-control(name="img", type="file", placeholder="Confirmer votre mot de passe")
+
+        br
+        input.btn.btn-primary(type="submit", value="Submit")
